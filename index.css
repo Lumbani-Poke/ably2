@@ -1,0 +1,843 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+nav {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+nav .logo img {
+  width: 100px;
+}
+nav .logo {
+  position: relative;
+  left: 2rem;
+  cursor: pointer;
+}
+nav .menu {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav .menu .button {
+  width: 150px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: #ff6347;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+nav .menu .button:hover {
+  transition: 1s;
+  background: #003547;
+}
+nav .menu .option .bx {
+  cursor: pointer;
+  font-size: 40px;
+}
+
+/*SECTION-1*/
+
+.section-1 {
+  width: 100%;
+  height: 100vh;
+}
+.section-1 .content {
+  width: 100%;
+  height: 100%;
+}
+.section-1 .content .overlap-video {
+  width: 90%;
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  align-items: center;
+  justify-content: start;
+  color: #fff;
+  z-index: 10;
+}
+.section-1 .content .overlap-video h1 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+.section-1 .content .overlap-video .info {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  bottom: 1rem;
+}
+.section-1 .content .overlap-video .info .button-clip {
+  width: 160px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 10px;
+  background: #9b9a99;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.section-1 .content .overlap-video .info .button-clip:hover {
+  transition: 1s;
+  background: #003547;
+}
+.section-1 .content .overlap-video .info .read-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  height: 30px;
+  position: relative;
+  right: 10px;
+  border-bottom: 1px solid #ff6347;
+  cursor: pointer;
+}
+.section-1 .content .overlap-video .info .read-more:hover {
+  transition: 1s;
+  color: #ff6347;
+}
+
+/*SECTION-2*/
+
+.section-2 {
+  position: relative;
+  top: 2in;
+  width: 100%;
+  height: 100vh;
+}
+.section-2 .content {
+  width: 90%;
+  height: 100%;
+  background-image: url("./section-2.jpeg");
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  cursor: pointer;
+}
+.section-2 .content .info {
+  width: 95%;
+  height: 50%;
+  position: relative;
+  top: 1in;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-2 .content .info:hover {
+  transition: 1s;
+  color: #ff6347;
+}
+.section-2 .content .info h1 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+.section-2 .content .info .read-more {
+  width: 90px;
+  height: 30px;
+  font-size: 18px;
+  position: relative;
+  top: 1rem;
+  left: 5px;
+  border-bottom: 1px solid #ff6347;
+}
+
+/*SECTION-3*/
+
+.section-3 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  top: 3in;
+  background: #ff6347;
+}
+.section-3 .content {
+  width: 90%;
+  height: 80%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.section-3 .content .part-1 {
+  width: 50%;
+  height: 100%;
+  color: #fff;
+}
+.section-3 .content .part-1 .info {
+  width: 100%;
+  height: 80%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.section-3 .content .part-1 .info h4 {
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.section-3 .content .part-1 .info h1 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.section-3 .content .part-2 {
+  width: 50%;
+  height: 100%;
+}
+.section-3 .content .part-2 .info {
+  width: 100%;
+  height: 80%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.section-3 .content .part-2 .info .form_section {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: flex-start;
+}
+.section-3 .content .part-2 .info form {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: start;
+  grid-row-gap: 1rem;
+}
+.section-3 .content .part-2 .info form input[type="text"],
+select {
+  padding: 22px;
+  border: 1px solid transparent;
+  border-radius: 14px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+.section-3 .content .part-2 .info form textarea {
+  padding: 22px;
+  border: 1px solid transparent;
+  border-radius: 14px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+.section-3 .content .part-2 .info .check-box-div {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.section-3 .content .part-2 .info .check-box-div h3 {
+  position: relative;
+  left: 1rem;
+  font-weight: 400;
+  color: #fff;
+}
+.section-3 .content .part-2 .info .button {
+  width: 150px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #003547;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.section-3 .content .part-2 .info .button:hover {
+  transition: 1s;
+  color: #003547;
+  background: #fff;
+}
+
+/*SECTION-4*/
+
+.section-4 {
+  position: relative;
+  top: 4in;
+  width: 100%;
+  height: 100vh;
+}
+.section-4 .content {
+  width: 90%;
+  height: 100%;
+  background-image: url("./section-4.jpeg");
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  cursor: pointer;
+}
+.section-4 .content .info {
+  width: 95%;
+  height: 50%;
+  position: relative;
+  top: 1in;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-4 .content .info:hover {
+  transition: 1s;
+  color: #ff6347;
+}
+.section-4 .content .info h1 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+.section-4 .content .info .read-more {
+  width: 90px;
+  height: 30px;
+  font-size: 18px;
+  position: relative;
+  top: 1rem;
+  left: 5px;
+  border-bottom: 1px solid #ff6347;
+}
+
+/*SECTION-5*/
+
+.section-5 {
+  position: relative;
+  top: 6in;
+  width: 100%;
+  height: 80vh;
+}
+.section-5 .content {
+  width: 90%;
+  height: 100%;
+  background-image: url("./section-5.jpeg");
+  background-repeat: no-repeat;
+  background-image: cover;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  cursor: pointer;
+}
+.section-5 .content .info {
+  width: 95%;
+  height: 50%;
+  position: relative;
+  top: 1in;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-5 .content .info:hover {
+  transition: 1s;
+  color: #ff6347;
+}
+.section-5 .content .info h1 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+.section-5 .content .info .read-more {
+  width: 90px;
+  height: 30px;
+  font-size: 18px;
+  position: relative;
+  top: 1rem;
+  left: 5px;
+  border-bottom: 1px solid #ff6347;
+}
+
+/*SECTION-6*/
+
+.section-6 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  top: 6.5in;
+}
+.section-6 .content {
+  width: 90%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #003547;
+}
+.section-6 .content .title {
+  width: 100%;
+  height: 50px;
+  color: #003547;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 3rem;
+  font-size: 20px;
+}
+.section-6 .content .title .archive-text {
+  border-bottom: 1px solid #ff6347;
+  cursor: pointer;
+}
+.section-6 .content .title .archive-text:hover {
+  color: #ff6347;
+}
+.section-6 .content .info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-6 .content .info:hover {
+  color: #ff6347;
+  transition: 1s;
+}
+.section-6 .content .info img {
+  width: 600px;
+  height: 400px;
+  cursor: pointer;
+}
+.section-6 .content .info .details {
+  position: relative;
+  top: 1rem;
+}
+.section-6 .content .info .details h2 {
+  font-weight: 300;
+  cursor: pointer;
+}
+.section-6 .content .info .details h2:hover {
+  transition: 1s;
+  color: tomato;
+}
+.section-6 .content .info ul {
+  color: #003547;
+  position: relative;
+  top: 1rem;
+  list-style: none;
+  cursor: pointer;
+}
+.section-6 .content .info ul .date {
+  color: #014961;
+}
+
+/*SECTION-7*/
+
+.section-7 {
+  width: 100%;
+  height: 50vh;
+  color: #fff;
+  background-image: url("./section-7.jpeg");
+  position: relative;
+  top: 8in;
+}
+.section-7 .content {
+  width: 90%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.section-7 .content .part-1 {
+  width: 60%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.section-7 .content .part-1 h1 {
+  font-size: 3rem;
+  position: relative;
+  bottom: 3rem;
+  font-weight: 400;
+}
+.section-7 .content .part-2 {
+  width: 40%;
+  height: 70%;
+}
+.section-7 .content .part-2 .contact {
+  width: 100%;
+  height: 100%;
+}
+.section-7 .content .part-2 .sign-up {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.section-7 .content .part-2 .sign-up input {
+  width: 380px;
+  height: 65px;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: ;
+  border: none;
+  outline: none;
+}
+.section-7 .content .part-2 .sign-up .button {
+  width: 120px;
+  height: 65px;
+  background: #ff6347;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 1rem;
+  border-radius: 14px;
+  cursor: pointer;
+}
+.section-7 .content .part-2 .sign-up .button:hover {
+  transition: 1s;
+  background: #003547;
+}
+.section-7 .content .part-2 .terms {
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.section-7 .content .part-2 .terms h3 {
+  font-weight: 300;
+}
+.section-7 .content .part-2 .check-box-div {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.section-7 .content .part-2 .check-box-div h3 {
+  font-size: 18px;
+  font-weight: 300;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+/*FOOTER*/
+footer {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  top: 10in;
+}
+footer .content {
+  width: 90%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .content .part-1 {
+  width: 50%;
+  height: 90%;
+}
+footer .content .part-1 .bx {
+  font-size: 40px;
+}
+footer .content .part-1 .logo img {
+  width: 80px;
+}
+footer .content .part-1 .media {
+  width: 550px;
+  height: 80%;
+  display: grid;
+  align-items: center;
+  justify-content: start;
+  grid-row-gap: 1rem;
+  font-size: 25px;
+  color: #003547;
+}
+footer .content .part-1 .media span {
+  position: relative;
+  left: 1rem;
+}
+footer .content .part-1 .media .linkedin {
+  width: 350px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  top: 10px;
+  cursor: pointer;
+}
+footer .content .part-1 .media .linkedin:hover {
+  color: #ff6347;
+}
+footer .content .part-1 .media .facebook {
+  width: 350px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  bottom: 1.1in;
+  cursor: pointer;
+}
+footer .content .part-1 .media .facebook:hover {
+  color: #ff6347;
+}
+footer .content .part-1 .logo {
+  position: relative;
+  top: 3rem;
+}
+footer .content .part-2 {
+  width: 50%;
+  height: 90%;
+}
+footer .content .part-2 .menu {
+  width: 550px;
+  height: 80%;
+}
+footer .content .part-2 .menu .info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #003547;
+  font-size: 18px;
+}
+footer .content .part-2 .menu .info ul {
+  list-style: none;
+  cursor: pointer;
+}
+footer .content .part-2 .menu .info ul li span {
+  color: #ff6347;
+}
+footer .content .part-2 .menu .info ul li:hover {
+  color: #ff6347;
+}
+footer .content .part-2 .menu .info .info-1 {
+  width: 50%;
+  height: 30%;
+  display: grid;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+  bottom: 3rem;
+}
+footer .content .part-2 .menu .info .info-2 {
+  width: 50%;
+  height: 30%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 3rem;
+}
+footer .content .part-2 .ably {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  top: 3rem;
+  font-size: 18px;
+  color: #003547;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+footer .content .part-2 .ably span {
+  cursor: pointer;
+}
+footer .content .part-2 .ably .medical-as {
+  position: relative;
+  left: 1.6in;
+}
+
+/*MEDIA SCREEN*/
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .section-1 .content .overlap-video h1 {
+    font-size: 3rem;
+  }
+  nav .menu .button {
+    width: 150px;
+    height: 40px;
+  }
+  .section-1 .content .overlap-video .info {
+    width: 300px;
+    height: 100px;
+    position: relative;
+    top: 1rem;
+  }
+  .section-1 .content .overlap-video .info .button-clip {
+    height: 40px;
+  }
+  .section-2 .content .info h1 {
+    font-size: 3rem;
+  }
+  .section-3 .content {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-3 .content .part-1 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-3 .content .part-1 .info h1 {
+    font-size: 2rem;
+  }
+  .section-3 .content .part-2 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-3 .content .part-2 .info form input[type="text"],
+  select {
+    position: relative;
+    bottom: 1.4rem;
+    padding: 22px;
+    height: 10px;
+    font-size: 12px;
+  }
+  .section-3 .content .part-2 .info form textarea {
+    position: relative;
+    bottom: 1rem;
+    font-size: 12px;
+  }
+  .section-3 .content .part-2 .info .check-box-div {
+    position: relative;
+    top: 0.1rem;
+  }
+  .section-3 .content .part-2 .info .check-box-div h3 {
+    position: relative;
+    top: 10px;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  .section-3 .content .part-2 .info .button {
+    width: 150px;
+    height: 40px;
+    position: relative;
+    top: 1.3rem;
+  }
+  .section-4 .content .info h1 {
+    font-size: 3rem;
+  }
+  .section-5 .content .info h1 {
+    font-size: 3rem;
+  }
+  .section-6 .content .info {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-6 .content .title {
+    position: relative;
+    top: 1rem;
+  }
+  .section-6 .content .info img {
+    width: 450px;
+    height: 225px;
+  }
+  .section-6 .content .info .details h2 {
+    font-size: 1.2rem;
+  }
+  .section-6 .content .info ul {
+    font-size: 0.8rem;
+  }
+  .section-7 .content {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-7 .content .part-1 {
+    width: 100%;
+  }
+  .section-7 .content .part-1 h1 {
+    font-size: 1.4rem;
+    position: relative;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-7 .content .part-2 {
+    position: relative;
+    bottom: 1rem;
+    width: 100%;
+  }
+  .section-7 .content .part-2 .sign-up input {
+    width: 300px;
+    height: 10px;
+    font-size: 14px;
+  }
+  .section-7 .content .part-2 .sign-up .button {
+    height: 40px;
+  }
+  footer .content {
+    display: grid;
+  }
+  footer .content .part-1 {
+    height: 30%;
+    position: relative;
+    right: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer .content .part-2 {
+    height: 30%;
+    position: relative;
+    right: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer .content .part-2 .menu .info {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    color: #003547;
+    font-size: 18px;
+  }
+  footer .content .part-2 .menu .info .info-2 {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: 1rem;
+  }
+  footer .content .part-2 .ably {
+    position: relative;
+    top: 2in;
+    height: 100px;
+    display: grid;
+  }
+  footer .content .part-2 .ably .medical-as {
+    position: relative;
+    left: 0;
+  }
+}
